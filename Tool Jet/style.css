@@ -1,0 +1,522 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 300 !important;
+    background-color: #f6f8fa !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-weight: 300;
+}
+
+p {
+    font-size: 16px;
+}
+
+.bgBtn {
+    background-color: #4368E3;
+    padding: 18px;
+    height: 38px;
+    border-radius: 12px;
+}
+
+.bgClrBtn {
+    background-color: #4368E3 !important;
+}
+
+.cusNav.navbar {
+    background-color: transparent !important;
+}
+
+.cusNav .dropdown-toggle.show::after {
+    border-bottom: .3em solid;
+    border-right: .3em solid transparent;
+    border-top: 0;
+    border-left: .3em solid transparent;
+}
+
+.cusNav .container {
+    background-color: #303030;
+    padding: 5px;
+    border-radius: 16px;
+    border: 1px;
+    width: fit-content;
+    color: #fff;
+}
+
+.cusNav.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: #303030;
+}
+
+.cusNav a {
+    color: #fff;
+}
+
+.cusNav a:hover,
+.cusNav a:focus {
+    /* color: #fff; */
+    color: #9caff1;
+}
+
+.cusNav .dropdown-item:focus,
+.cusNav .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.cusNav .dropdown-item span {
+    margin-right: 10px;
+}
+
+.cusNav .dropdown-menu[data-bs-popper] {
+    top: 110%;
+}
+
+.cusNav .startBtn {
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.startBtn a {
+    color: #000;
+}
+
+
+/* Banner */
+
+.banner {
+    margin-top: -30px;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 30px;
+    min-height: 1105px; 
+}
+
+.banner h1 {
+    font-size: 50px;
+}
+
+.banner h1 span {
+    color: #4368E3;
+}
+
+.banner p {
+    color: #8F8F8F;
+}
+
+/* .banner a {
+      border-radius: 12px;
+      background-color: #000;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+    } */
+
+.startBtnBan {
+    color: #fff;
+    background: #000;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 12px 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.startBtnBan:hover {
+    cursor: pointer;
+    color: #e7ffcb;
+}
+
+.startBtnBan:hover {
+    box-shadow: inset 150px 0 0 0 #4368E3;
+}
+
+
+.banner.minHt{
+    min-height: 1500px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+.images img{
+    width: auto;
+}
+
+.banImg1 {
+    position: absolute;
+}
+
+.banImg2 {
+    position: absolute;
+    top: 25%;
+    /* animation: expandImg2 ease-in 3s; */
+
+}
+
+.banImg3 {
+    position: absolute;
+    top: 50%;
+    /* animation: expandImg3 ease-in 3s; */
+}
+
+
+.banImg2.expandImg2 {
+    top: 80%;
+    transition: all 0.6s;
+}
+
+.banImg3.expandImg3 {
+    top: 200%;
+    transition: all 0.6s;
+}
+
+/* Second */
+.second h2 {
+    line-height: 1.4;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+.widCus {
+    width: 30px;
+}
+
+.email {
+    color: #0B79AF;
+}
+
+.events {
+    color: #AF5883;
+}
+
+.files {
+    color: #00A05E;
+}
+
+.documnets {
+    color: #4368E3;
+}
+
+.rowSec h3,
+.twoBox h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.rowSec p,
+.twoBox p {
+    color: #afafaf;
+    margin-bottom: 5px;
+}
+
+/*  */
+.twoBox {
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+}
+
+.boxBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.twoBox .boxClr {
+    width: 38px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #BBE2F5;
+}
+
+.twoBox img {
+    margin-bottom: -25px;
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.twoBox .arrowBtn {
+    border-radius: 100%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+}
+
+.twoBox .arrowBtn i {
+    transition: all 0.4s;
+    color: #000;
+}
+
+.twoBox .arrowBtn:hover {
+    background-color: #000;
+    transition: all 0.4s;
+}
+
+.twoBox .arrowBtn:hover i {
+    transform: rotate(45deg);
+    transition: all 0.4s;
+    color: #fff;
+}
+
+/* Cards */
+.lore {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.cusCard {
+    height: 100%;
+}
+
+.cusCard .card {
+    border-radius: 4px;
+    height: 100%;
+    transition: background 0.4s;
+    border: 1px solid #f1f1f1;
+}
+
+.cusCard .card-title {
+    font-size: 17px;
+}
+
+.cusCard p {
+    font-size: 14px;
+    color: #8F8F8F;
+}
+
+.cusCard a,
+.postImg a {
+    background-color: #F5F5F5;
+    padding: 5px;
+    color: #8F8F8F;
+    border-radius: 4px;
+    border: 1px solid #8F8F8F;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cusCard .card:hover {
+    color: #fff;
+    background-color: #000;
+    transition: background 0.4s;
+}
+
+.cusCard .card:hover .wcf {
+    filter: invert(1);
+    transition: background 0.4s;
+}
+
+.cusCard .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cusCard .card hr {
+    border-top: 1px solid #bbb8b8;
+}
+
+
+/* Owl Carosuel */
+#owl-demo .item {
+    margin: 3px;
+}
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Equal Heights for OwlCarousel 2 */
+#news-slider {
+    margin-top: 10px;
+}
+
+.postImg img {
+    margin-bottom: 20px;
+}
+
+.postImg h3 {
+    font-size: 17px;
+    font-weight: 300;
+    margin: 20px 0 15px;
+}
+
+.postImg p {
+    font-size: 14px;
+    color: #707070;
+}
+
+.owl-controls .owl-buttons {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.owl-controls .owl-buttons:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+.owl-controls .owl-buttons .owl-prev {
+    background: #fff;
+    position: absolute;
+    top: -16%;
+    left: 90%;
+    padding: 0 18px 0 15px;
+    border-radius: 10px;
+    box-shadow: 3px 14px 25px -10px #92b4d0;
+    transition: background 0.5s ease 0s;
+    border: 1px solid #f1f1f1;
+}
+
+.owl-controls .owl-buttons .owl-next {
+    background: #fff;
+    position: absolute;
+    top: -16%;
+    right: 15px;
+    padding: 0 15px 0 18px;
+    border-radius: 10px;
+    box-shadow: -3px 14px 25px -10px #92b4d0;
+    transition: background 0.5s ease 0s;
+    border: 1px solid #f1f1f1;
+}
+
+.owl-controls .owl-buttons .owl-prev:after,
+.owl-controls .owl-buttons .owl-next:after {
+    content: "\f104";
+    font-family: FontAwesome;
+    color: #333;
+    font-size: 30px;
+}
+
+.owl-controls .owl-buttons .owl-next:after {
+    content: "\f105";
+}
+
+
+
+
+
+
+@media (max-width:767px) {
+    section{
+        padding: 20px 15px;
+    }
+    .row.mt-5 {
+        margin-top: 20px !important;
+    }
+    .cusNav .container {
+        width: 100%;
+    }
+
+    .cusNav a {
+        padding: 5px 10px !important;
+    }
+    .images img{
+        width: 100%;
+    }
+    .banner{
+        min-height: 1000px;
+    }
+    .banner.minHt {
+        min-height: 1200px;
+    }
+    .banImg2.expandImg2 {
+        top: 50%;
+    }
+    .banImg3.expandImg3 {
+        top: 100%;
+    }
+    
+    .marGap {
+        margin: 5px 0;
+    }
+
+    #news-slider {
+        margin-top: 60px;
+    }
+
+    .owl-controls .owl-buttons .owl-prev {
+        top: -15%;
+        left: 90%;
+        padding: 0 18px 0 15px;
+    }
+
+    .owl-controls .owl-buttons .owl-next {
+        top: -15%;
+        right: 45px;
+        padding: 0 15px 0 18px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px)  {
+    .banner{
+        min-height: 1000px;
+    }
+    .banner.minHt {
+        min-height: 1200px;
+    }
+    .banImg2.expandImg2 {
+        top: 70%;
+    }
+    .banImg3.expandImg3 {
+        top: 150%;
+    }
+}
+
+@media (max-width:992px) {
+    section{
+        padding: 20px 15px;
+    }
+    .images img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .cusNav a {
+        padding: 5px 20px !important;
+    }
+  
+}
+
+
